@@ -293,9 +293,9 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     width: 56px;
 }
 
-.tabcontent {
+/* .tabcontent {
     visibility: hidden;
-}
+} */
 
 /* LAYOUT */
 .container {
@@ -663,6 +663,10 @@ header>.container {
 .cta-content .fs-med {
     max-width: 412px;
 }
+.main-cta .btn {
+    background-image: var(--clr-accent-gradient);
+    color: white;
+}
 
 
 /* 7. FOOTER */
@@ -873,6 +877,7 @@ blockquote.fs-med {
 .form-button {
     cursor: pointer;
     border: 0;
+    background-image: var(--clr-accent-gradient);
 }
 
 .contact-section-img {
@@ -894,6 +899,10 @@ CONTACT ME PAGE  CONTACT ME PAGE  CONTACT ME PAGE
     text-transform: capitalize;
     line-height: 4rem;
     margin-bottom: 2rem;
+}
+.contact-hero-section .btn {
+    background-image: var(--clr-accent-gradient);
+    color: white;
 }
 
 
