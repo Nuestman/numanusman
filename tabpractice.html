@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Practice</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        section {
+  max-width:768px;
+  margin-inline:auto;
+}
+/* Style the tab */
+/* .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+} */
+
+Style the buttons that are used to open the tab content
+.tab button {
+  /* background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px; */
+    transition: all 0.9s ease;
+}
+.tabcontent {
+    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current tablink class */
+/* .tab button.active {
+  background-color: #ccc;
+} */
+
+/* Style the tab content */
+/* .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} */
+    </style>
+</head>
+<body>
+    <section class="about-hero-section is-primary-gradient">
+        <div class="container is-flex">
+
+            <div class="hero-accordion">
+                <div class="accordion-container is-flex is-flex-column">
+
+                    <!-- Tab Content -->
+                    <div class="accordion-body tabcontent" id="History">
+                            <p class="fs-med">
+                                I've always loved playing around with PCs since I got introduced to it as teenager in High School. I’ve been fixing PC software issues since.
+                                I've been doing freelance computer software repairs over a decade now.
+                                I started dabbling in web design and coding  about 2 years ago and improving by the day.
+                            </p>
+                    </div>
+                    <div class="accordion-body tabcontent" id="Education">
+                            <p class="fs-med">
+                                I’ve schooled everywhere including the School of Hard Knocks, only, don't readily remember my experiences there.
+                            </p>
+                    </div>
+                    <div class="accordion-body tabcontent" id="Emnurse">
+                            <p class="fs-med">
+                                Hey thank you very much!
+                                It worked!
+                                But can you tell me how to give a border to this type of triangle?(As it is only made up of the border of a div!!)
+                            </p>
+                    </div>
+
+                    <!-- Tab Controls/ TabLinks -->
+                    <div class="accordion-ctrls is-flex tab">
+                        <button class="btn accord-btn tablinks" onclick="openMe(event, 'History')">History</button>
+                        <button class="btn accord-btn tablinks" onclick="openMe(event, 'Education')">Education</button>
+                        <button class="btn accord-btn tablinks" onclick="openMe(event, 'Emnurse')">EMNurse</button>
+                    </div>
+                </div>
+                <div class="accord-title">
+                    <h2 class="title-is-h1 is-accent">Story Of My Life</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -121,12 +121,15 @@
             <div class="section-content">
                 <div class="accordion">
                     <div class="accordion-container ">
-                        <ul class="accordion-ctrls is-flex">
-                            <li class="btn accord-btn"><a href="">iDesign</a></li>
-                            <li class="btn accord-btn"><a href="">iDevelop</a></li>
-                            <li class="btn accord-btn"><a href="">iSpeak</a></li>
+                        <ul class="accordion-ctrls is-flex tab">
+                            <button onclick="openMe(event, 'IDesign')" class="btn accord-btn tablink" id="defaultOpen">iDesign
+                            </button>
+                            <button onclick="openMe(event, 'IDevelop')" class="btn accord-btn tablink">iDevelop
+                            </button>
+                            <button onclick="openMe(event, 'ISpeak')" class="btn accord-btn tablink">iSpeak
+                            </button>
                         </ul>
-                        <div class="accordion-body">
+                        <div class="accordion-body tabcontent" id="IDesign">
                             <div class="accordion-text">
                                 <p class="fs-med ">
                                     I love to keep designs clean, simple and effective.
@@ -157,6 +160,66 @@
                                 <li class="accordion-link">
                                     <a href="">
                                         <img src="images/Accordion-icons/file-icons_adobe-illustrator.svg" alt="accordion-link-icon">Illustrator
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="accordion-body tabcontent" id="IDevelop">
+                            <div class="accordion-text">
+                                <p class="fs-med ">
+                                    I develop responsively and accessibly. I love watching code come to life in the browser.
+                                </p>
+                            </div>
+                            <ul class="accordion-link-container is-flex">
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/akar-icons_vscode-fill.svg" alt="accordion-link-icon">VS Code
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/carbon_logo-github.svg" alt="accordion-link-icon">
+                                        GitHub
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/file-icons_adobe-photoshop.svg" alt="accordion-link-icon">Webflow
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="accordion-body tabcontent" id="ISpeak">
+                            <div class="accordion-text">
+                                <p class="fs-med ">
+                                    I speak the following languages and I’m learning more.
+                                </p>
+                            </div>
+                            <ul class="accordion-link-container is-flex">
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/mdi_language-html5.svg" alt="accordion-link-icon">HTML
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/ci_css3.svg" alt="accordion-link-icon">
+                                        CSS3
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/mdi_language-php.svg" alt="accordion-link-icon">PHP
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/cib_mysql.svg" alt="accordion-link-icon">mySQL
+                                    </a>
+                                </li>
+                                <li class="accordion-link">
+                                    <a href="">
+                                        <img src="images/Accordion-icons/file-icons_adobe-illustrator.svg" alt="accordion-link-icon">JavaScript
                                     </a>
                                 </li>
                             </ul>
@@ -362,5 +425,7 @@
         </div>
     </footer>
     
+
+    <script src="js/script.js"></script>
 </body>
 </html>

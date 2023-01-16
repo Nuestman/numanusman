@@ -35,98 +35,66 @@
 
     <main>
 
-        <section class="contact-hero-section">
-            <div class="container is-centered is-bg-light">
-                <div class="contact-hero-text">
-                    <div class="contact-title">
-                        <h1 class="title-is-h1 is-primary">I’m currently <span class="is-accent">available</span> for freelance work.</h1>
-                    </div>
-                
-                    <p class="fs-med is-primary">
-                        Let's build something great.
-                    </p>
+        <section class="about-hero-section is-primary-gradient">
+            <div class="container is-flex">
+                <div class="hero-img-container">
+                    <img width="100%" src="images/about-imgs/about-hero-img.png" alt="Numan Usman facing camera smiling." class="hero-img">
                 </div>
-                <div class="btn-grp">
-                    <a href="https://wa.me/+233206484034" class="btn btn-is-lrg"><img src="images/social-media/Property 1=social link.svg" alt="">+233206484034</a>
-                    
-                    <a href="mailto:nuestman@icloud.com" class="btn btn-is-lrg"><img src="images/social-media/Property 1=social link.svg" alt="">nuestman@icloud.com</a>
-                </div>
-            </div>
-        </section>
 
-        <section class="contact-section is-primary-gradient">
-            <div class="container">
-                <div class="section-head is-centered">
-                    <h2 class="subtitle-is-h2">I’d love to hear from you.</h2>
-                    <p class="fs-med">Still have questions unanswered, or just wanna say hi. . . ?</p>
-                </div>
-                <div class="section-contents is-flex">
-                    <div class="contact-form">
-                        <h3 class="contact-form_head subtitle-is-h3 is-accent">Contact Me</h3>
-                        <form action="" class="contact-form_form is-flex is-flex-column">
-                            <div class="is-flex">
-                                <input type="text" placeholder="Your Name" class="contact-input">
-                                <input type="email" placeholder="Your Email" class="contact-input">
+                <div class="hero-accordion">
+                    <div class="accordion-container is-flex is-flex-column">
+                        <div class="accordion-body tabcontent" id="History">
+                            <div class="hero-accordion-text">
+                                <p class="fs-med">
+                                    I've always loved playing around with PCs since I got introduced to it as teenager in High School. I’ve been fixing PC software issues since.
+                                    I've been doing freelance computer software repairs over a decade now.
+                                    I started dabbling in web design and coding  about 2 years ago and improving by the day.
+                                </p>
                             </div>
-                            <input type="text" placeholder="Subject" class="contact-input">
-                            <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message Here"></textarea>
-                            <button type="submit" class="btn btn-is-lrg form-button">Send Message</button>
-                        </form>
+                        </div>
+                        <div class="accordion-body tabcontent" id="Education">
+                            <div class="hero-accordion-text">
+                                <p class="fs-med">
+                                    I’ve schooled everywhere including the School of Hard Knocks, only, don't readily remember my experiences there.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-body tabcontent" id="Emnurse">
+                            <div class="hero-accordion-text">
+                                <p class="fs-med">
+                                    Hey thank you very much!
+                                    It worked!
+                                    But can you tell me how to give a border to this type of triangle?(As it is only made up of the border of a div!!)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-ctrls is-flex tab">
+                            <button onclick="openMe(event, 'History')" class="btn accord-btn tablink">History</button>
+                            <button onclick="openMe(event, 'Education')" class="btn accord-btn tablink">Education</button>
+                            <button onclick="openMe(event, 'Emnurse')" class="btn accord-btn tablink">EM-Nurse</button>
+                        </div>
                     </div>
-                    <div class="contact-section-img">
-                        <img width="100%" src="images/about-imgs/smile.png" alt="Numan Usman facing camera smiling." class="hero-img">
+                    <div class="accord-title">
+                        <h2 class="title-is-h1 is-accent">Story Of My Life</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq">
-            <!-- :Before here -->
+        <section class="social-proof">
             <div class="container">
-                <div class="section-head is-centered">
-                    <div class="faq-title">
-                        <h2 class="subtitle-is-h2">Frequently Asked Questions</h2>
+                <h2 class="subtitle-is-h2 is-centered">I’ve Collaborated With...</h2>
+                <div class="social-proof-container is-flex">
+                    <div class="proof-logo">
+                        <img max-width="100%" src="images/company-logos/s-proof-logo-aga.jpg" alt="AngloGold Ashanti Ghana Logo" class="proof-logo-img">
                     </div>
-                    <div class="faq-text">
-                        <p class="fs-med">We curated responses to some of the most frequent queries here for you; have a look at them.</p>
-                    </div>
-                </div>
-
-                <div class="faq-main">
-                    <div class="faq-content">
-                        <details class="query">
-                            <summary class="subtitle-is-h5">What Is Architecture?</summary>
-                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">Getting Started</summary>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">How to Choice Pricing Plan</summary>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">How to get Discount</summary>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">Getting Started</summary>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">How to Choice Pricing Plan</summary>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">What Is Architecture?</summary>
-                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </details>
-                        <details class="query">
-                            <summary class="subtitle-is-h5">How to get Discount</summary>
-                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </details>
+                    <div class="proof-logo">
+                        <img max-width="100%" src="images/company-logos/s-proof-logo-agahf.jpg" alt="AGA Health Foundation Logo" class="proof-logo-img">
                     </div>
                 </div>
             </div>
-            <!-- :After here -->
         </section>
-        
+
         <section class="testimonial-section is-primary-gradient">
             <div class="container">
 
@@ -195,6 +163,52 @@
             </div>
         </section>
 
+        <section class="faq">
+            <!-- :Before here -->
+            <div class="container">
+                <div class="section-head is-centered">
+                    <div class="faq-title">
+                        <h2 class="subtitle-is-h2">Frequently Asked Questions</h2>
+                    </div>
+                    <div class="faq-text">
+                        <p class="fs-med">We curated responses to some of the most frequent queries here for you; have a look at them.</p>
+                    </div>
+                </div>
+
+                <div class="faq-main">
+                    <div class="faq-content">
+                        <details class="query">
+                            <summary class="subtitle-is-h5">What Is Architecture?</summary>
+                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">Getting Started</summary>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">How to Choice Pricing Plan</summary>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">How to get Discount</summary>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">Getting Started</summary>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">How to Choice Pricing Plan</summary>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">What Is Architecture?</summary>
+                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </details>
+                        <details class="query">
+                            <summary class="subtitle-is-h5">How to get Discount</summary>
+                            <p class="fs-rgular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <!-- :After here -->
+        </section>
         <!-- <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
@@ -380,6 +394,31 @@
             </div>
         </section> -->
 
+        <section class="contact-section is-primary-gradient">
+            <div class="container">
+                <div class="section-head is-centered">
+                    <h2 class="subtitle-is-h2">I’d love to hear from you.</h2>
+                    <p class="fs-med">Still have questions unanswered, or just wanna say hi. . . ?</p>
+                </div>
+                <div class="section-contents is-flex">
+                    <div class="contact-form">
+                        <h3 class="contact-form_head subtitle-is-h3 is-accent">Contact Me</h3>
+                        <form action="" class="contact-form_form is-flex is-flex-column">
+                            <div class="is-flex">
+                                <input type="text" placeholder="Your Name" class="contact-input">
+                                <input type="email" placeholder="Your Email" class="contact-input">
+                            </div>
+                            <input type="text" placeholder="Subject" class="contact-input">
+                            <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+                            <button type="submit" class="btn btn-is-lrg form-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-section-img">
+                        <img width="100%" src="images/about-imgs/smile.png" alt="Numan Usman facing camera smiling." class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- <section class="main-cta is-primary-gradient">
             <div class="container">
@@ -426,5 +465,19 @@
         </div>
     </footer>
     
+
+    <script src="js/script.js">
+        var sections = document.getElementsByTagName("section");
+        var currentSection = 0;
+
+        window.addEventListener("wheel", function (event) {
+            var delta = Math.sign(event.deltaY);
+            currentSection = Math.max(0, Math.min(sections.length - 1, currentSection + delta));
+            sections[currentSection].scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
 </body>
 </html>

@@ -93,7 +93,9 @@ textarea,
 select {
   font: inherit;
 }
-
+button {
+    all: unset;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -167,15 +169,14 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 1em 1.5em;
-    color: var(--clr-bg-skyblue);
-    background-image: var(--clr-accent-gradient);
     border-radius: 0.313em;
+    /* color: var(--clr-bg-skyblue);
+    background-image: var(--clr-accent-gradient); */
     /* display: inline-block; */
 }
 .btn:hover, .btn:active {
     background-color: var(--clr-accent);
     color: white;
-    border-radius: unset;
 }
 .btn-is-lrg {
     font-size: 1em;
@@ -206,7 +207,8 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     text-decoration: underline;
 }
 
-.accord-btn {
+/* Accordion buttons OLD */
+/* .accord-btn {
     padding: 1em 2em;
     background-image: var(--clr-primary-gradient);
     color: white;
@@ -223,6 +225,21 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
 .accord-btn .disabled {
     background-color: unset;
     color: var(--clr-primary);
+} */
+
+
+/* Accordion NEW */
+.accord-btn {
+    padding: 1em 2em;
+    color: var(--clr-primary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10em;
+    text-transform: none;
+}
+.accord-btn:hover, .accord-btn:active, .accord-btn:focus-within {
+    background-image: var(--clr-primary-gradient);
+    color: var(--clr-accent-gradient);
+    cursor: pointer;
 }
 
 .accordion {
@@ -276,6 +293,10 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     width: 56px;
 }
 
+.tabcontent {
+    visibility: hidden;
+}
+
 /* LAYOUT */
 .container {
     max-width: 1280px;
@@ -287,7 +308,7 @@ section {
     /* margin: 128px 0; */
     padding: 128px 2rem;
     position: relative;
-    max-width: 1360px;
+    /* max-width: 1360px; */
     margin-inline: auto;
 }
 /* section::after {
@@ -510,7 +531,7 @@ header>.container {
     margin-bottom: 2em;
 }
 .intro::after {
-    content: url(/images/section\ break.svg);
+    content: url(images/section-break.svg);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -560,6 +581,7 @@ header>.container {
 .tools-used {
     gap: 24px;
     align-items: stretch;
+    max-width: 1360px;
 }
 .tools-used .section-content {
     width: 100%;
@@ -592,6 +614,7 @@ header>.container {
 .promise {
     align-items: stretch;
     gap: 24px;
+    max-width: 1360px;
 }
 .promise .section-header-huge {
     max-width: 408px;
@@ -779,7 +802,7 @@ blockquote.fs-med {
 }
 .faq .container::before {
     position: absolute;
-    content: url("/images/about-imgs/Subtract-1.svg");
+    content: url("images/about-imgs/Subtract-1.svg");
     top: 0;
     left: 0;
     z-index: 0;
@@ -787,7 +810,7 @@ blockquote.fs-med {
 }
 .faq .container::after {
     position: absolute;
-    content: url("/images/about-imgs/Subtract.svg");
+    content: url("images/about-imgs/Subtract.svg");
     bottom: 0;
     right: 0;
     z-index: -1;
