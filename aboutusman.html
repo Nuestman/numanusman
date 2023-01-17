@@ -43,7 +43,9 @@
 
                 <div class="hero-accordion">
                     <div class="accordion-container is-flex is-flex-column">
-                        <div class="accordion-body">
+
+                        <!-- Tab content -->
+                        <div id="History" class="accordion-body tabcontent">
                             <div class="hero-accordion-text">
                                 <p class="fs-med">
                                     I've always loved playing around with PCs since I got introduced to it as teenager in High School. I’ve been fixing PC software issues since.
@@ -52,12 +54,36 @@
                                 </p>
                             </div>
                         </div>
-                        <ul class="accordion-ctrls is-flex">
-                            <li class="btn accord-btn"><a href="">History</a></li>
-                            <li class="btn accord-btn"><a href="">Education</a></li>
-                            <li class="btn accord-btn"><a href="">EM-Nurse</a></li>
-                        </ul>
+                        
+                        <div id="Education" class="accordion-body tabcontent">
+                            <div class="hero-accordion-text">
+                                <p class="fs-med">
+                                    Pin web design and coding  about 2 years I've always loved playing around with PCs since I got introduced to it as teenager in High School. I’ve been fixing PC software issues since.
+                                    repairs over a decade now.and coding  about 2 years ago and improving by the day.
+                                    I started dabbling in web design I've been doing freelance computer software.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div id="Emnurse" class="accordion-body tabcontent">
+                            <div class="hero-accordion-text">
+                                <p class="fs-med">
+                                    I've always loved playing around with PCs since I got introduced to it as teenager in High School. I’ve been fixing PC software issues since.
+                                    I've been doing freelance computer software repairs over a decade now.
+                                    I started dabbling in web design and coding  about 2 years ago and improving by the day.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Tab links -->
+                        <div class="tab accordion-ctrls is-flex">
+                            <button class="tablinks btn accord-btn" id="defaultOpen" onclick="openMe(event, 'History')">History</button>
+                            <button class="tablinks btn accord-btn" onclick="openMe(event, 'Education')">Education</button>
+                            <button class="tablinks btn accord-btn" onclick="openMe(event, 'Emnurse')">EMNurse</button>
+                        </div>
+  
                     </div>
+
                     <div class="accord-title">
                         <h2 class="title-is-h1 is-accent">Story Of My Life</h2>
                     </div>
@@ -449,5 +475,7 @@
         </div>
     </footer>
     
+
+    <script src="js/script.js"></script>
 </body>
 </html>

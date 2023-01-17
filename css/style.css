@@ -231,12 +231,14 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
 /* Accordion NEW */
 .accord-btn {
     padding: 1em 2em;
+    width: 100%;
+    text-align: center;
     color: var(--clr-primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10em;
     text-transform: none;
 }
-.accord-btn:hover, .accord-btn:active, .accord-btn:focus-within {
+.accord-btn:hover, .accord-btn:active, .accord-btn:focus-within, .active {
     background-image: var(--clr-primary-gradient);
     color: var(--clr-accent-gradient);
     cursor: pointer;
@@ -264,10 +266,17 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
 .accordion-text {
     height: 4rem;
     margin-bottom: 2em;
+    max-width: 540px;
+    text-align: right;
+    margin-left: auto;
 }
 
 .accordion-link-container {
     gap: 1.5rem;
+    margin-left: auto;
+}
+#IDevelop .accordion-link-container {
+    max-width: 450px;
 }
 .accordion-link {
     background-color: var(--clr-bg-skyblue);
@@ -276,6 +285,7 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     font-family: var(--ff-title);
     border-bottom: 3px solid var(--clr-accent);
     width: 100%;
+    max-width: 140px;
     box-shadow: 6px 0px 24px rgba(0, 0, 0, 0.05), 0px 6px 24px rgba(0, 0, 0, 0.05);
     transition: all 300ms ease;
 }
@@ -293,9 +303,10 @@ h1, h2, h3, h4, h5, h6, .nav-list, summary, .btn {
     width: 56px;
 }
 
-/* .tabcontent {
-    visibility: hidden;
-} */
+.tabcontent {
+    /* visibility: hidden; */
+    display: none;
+}
 
 /* LAYOUT */
 .container {

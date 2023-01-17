@@ -1,26 +1,51 @@
-
-function openMe(str, storyName) {
+function openMe(evt, storyName) {
     // Declare all variables
     var i, tabcontent, tablinks;
-    
+  
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(storyName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+// function openMe(str, storyName) {
+//     // Declare all variables
+//     var i, tabcontent, tablinks;
+    
+//     // Get all elements with class="tabcontent" and hide them
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
     
 
   
-    // Get all elements with class="tablinks" and remove the class "active"
-    // tablinks = document.getElementsByClassName("tablinks");
-    // for (i = 0; i < tablinks.length; i++) {
-    //   tablinks[i].className = tablinks[i].className.replace(" active", "");
-    // }
+//     // Get all elements with class="tablinks" and remove the class "active"
+//     tablinks = document.getElementsByClassName("tablinks");
+//     for (i = 0; i < tablinks.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" active", "");
+//     }
   
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    // document.getElementById(storyName).style.display = "block";
-    // str.currentTarget.className += " active";
-  }
+//     // Show the current tab, and add an "active" class to the button that opened the tab
+//     document.getElementById(storyName).style.display = "block";
+//     str.currentTarget.className += " active";
+//   }
 
 
 
@@ -87,14 +112,65 @@ function openMe(str, storyName) {
 
 
 
+// NEW MODIFIED CODE
+
+// function openMe(str, storyName) {
+//     // Declare all variables
+//     var i, tabcontent, tablinks;
+    
+//     // Get all elements with class="tabcontent" and hide them
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
+    
+//     // Get all elements with class="tablinks" and remove the class "active"
+//     tablinks = document.getElementsByClassName("tablinks");
+//     for (i = 0; i < tablinks.length; i++) {
+//       if (tablinks[i].classList.contains("active")) {
+//           tablinks[i].classList.remove("active");
+//       }
+//     }
+  
+//     // Show the current tab, and add an "active" class to the button that opened the tab
+//     document.getElementById(storyName).style.display = "block";
+//     str.currentTarget.classList.add("active");
+// }
 
 
 
 
 
 
+// // Script to Activate Tabs
+// function openMe(str, storyName) {
+//     // 1. Declare all variables
+//     var i, tabcontent, tablinks;
+    
+//     // 2. Get all elements with class="tabcontent" and hide them
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
+    
 
+  
+//     // 3. Get all elements with class="tablinks" and remove the class "active".
+//     // To Check if the current tablink element has the "active" class before removing it.
+//     tablinks = document.getElementsByClassName("tablinks");
+// for (i = 0; i < tablinks.length; i++) {
+//     // 4. Now the function will only have one button with "active" class at a time, it will remove the class from the previously clicked button before adding it to the currently clicked button, which ensures that only one button is highlighted at a time.
+//     if (tablinks[i].classList.contains("active")) {
+//       tablinks[i].classList.remove("active");
+//       tablinks[i].className = tablinks[i].className.replace(" active", "");
+//     }
+// }
 
+  
+//     // 5. Show the current tab, and add an "active" class to the button that opened the tab
+//     document.getElementById(storyName).style.display = "block";
+//     str.currentTarget.className += " active";
+// }
 
 
 
